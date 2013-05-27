@@ -8,6 +8,7 @@
 body{
 	background: #E1E1E1;
 }
+
 h1,h2,h3,h4,h5,h6,p{
 	font-family:"Roboto Slab", serif;
 }
@@ -130,6 +131,10 @@ header{
 	background-color: #FF7F66; 
 }
 
+#formulario1{
+	font-size: 18px;
+	font-size: bold;
+}
 /* FIN CONTENIDO CENTRO */
 
 /* PIE DE PAGINA */
