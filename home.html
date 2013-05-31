@@ -15,6 +15,7 @@
   <script src="js/vendor/custom.modernizr.js"></script>
   <script src="js/jquery-1.10.0.min.js"></script>
 
+
 </head>
 <body>
 
@@ -58,14 +59,26 @@
 			<h1>Inicia Ahora !</h1>
 			<img src="img/separador.png" alt="separador">
 			<h3>"Un sistema diseñado para tí, flexible, rápido y fácil de usar"</h3>
-			<a href="#" class="button">COMENZAR</a>
-
+			<a href="#" data-reveal-id="registroForm" class="button">COMENZAR</a>
 			
 		</div>
 	</div>	
+		<div class="reveal-modal" id="registroForm">
+			<h4>Iniciar Sesión</h4>
+			<p>Ingresa a nuestro sistema para comenzar a realizar tus reservas</p>
+			<form action="#" >
+				<label for="usuario">Usuario</label>
+				<input type="text" required="true">
+				<label for="pass">Clave</label>
+				<input type="password" required="true">
+				<button type="submit">INGRESAR</button>
+				<button type="reset">Limpiar</button>
+			</form>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
 		
 	<div class="row">
-		<div class="small-9 small-centered columns">
+		<div class="small-9 small-centered columns" id="video">
 			<div class="flex-video">			
 				<iframe width="420" height="315" src="http://www.youtube.com/embed/61ltmp9VXWU" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -140,7 +153,7 @@
 							<label for="direccion" class="right inline">Dirección</label>
 						</div>
 						<div class="large-9 columns">
-							<textarea name="direccion" id="direccion" cols="30" rows="70"></textarea>
+							<textarea name="direccion" id="direccion" cols="30" rows="100"></textarea>
 							
 						</div>
 											
@@ -152,7 +165,6 @@
 			</div>
 
 		</div>
-
 
 	<footer>
 		<div class="row">
@@ -184,35 +196,12 @@
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
-	
-	<script src="js/foundation/foundation.alerts.js"></script>
-	
-	<script src="js/foundation/foundation.clearing.js"></script>
-	
-	<script src="js/foundation/foundation.cookie.js"></script>
-	
-	<script src="js/foundation/foundation.dropdown.js"></script>
-	
-	<script src="js/foundation/foundation.forms.js"></script>
-	
-	<script src="js/foundation/foundation.joyride.js"></script>
-	
-	<script src="js/foundation/foundation.js"></script>
-	
-	<script src="js/foundation/foundation.magellan.js"></script>
-	
-	<script src="js/foundation/foundation.orbit.js"></script>
-	
-	<script src="js/foundation/foundation.placeholder.js"></script>
-	
-	<script src="js/foundation/foundation.reveal.js"></script>
-	
-	<script src="js/foundation/foundation.section.js"></script>
-	
-	<script src="js/foundation/foundation.tooltips.js"></script>
-	
-	<script src="js/foundation/foundation.topbar.js"></script>
-	
-  <script src="js/foundation/app.js"></script>
+  	
+	 <script src="js/foundation.min.js"></script>
+	 <script>
+		  $(function(){
+		    $(document).foundation();    
+		  })
+	</script>
 </body>
 </html>
